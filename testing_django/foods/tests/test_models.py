@@ -12,7 +12,7 @@ class TestFood(TestCase):
         category = Category.objects.create(name=category_name)
 
         #When
-        food = food.objects.create(name=food_name, category=category_gory)
+        food = Food.objects.create(name=food_name, category=category)
 
         #Then
         self.assertEqual(food.name, food_name)
